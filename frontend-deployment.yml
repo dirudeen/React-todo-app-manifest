@@ -16,5 +16,5 @@ spec:
       - name: react-todo-app-frontend
         image: dirudeen/react-todo-app_frontend:v32
         ports:
-          - containerPort: 5173
+          - containerPort: 3000
         
