@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-todo-app-backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-todo-app-backend
+  template:
+    metadata:
+      labels:
+        app: react-todo-app-backend
+    spec:
+      containers:
+        - name: react-todo-app-backend
+          image: dirudeen/react-todo-app_backend:v32
+          ports:
+            - containerPort: 3000
+
+     
